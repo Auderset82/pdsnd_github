@@ -223,6 +223,7 @@ def valid_input(decision):
         return False
 
 def main():
+
     """Main function handling the code"""
     while True:
         city, month, day = get_filters()
