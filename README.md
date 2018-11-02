@@ -5,7 +5,7 @@
 Bikeshare Project Udacity
 
 ### Description
-Interactive Information about Bikeshare Data
+Interactive Information about Bikeshare Data for cities Chicago, Washingtion and New York City
 
 ### Files used
 bikeshare.py
