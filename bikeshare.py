@@ -213,7 +213,7 @@ def show_data(df):
                 break
 
 def valid_input(decision):
-    
+
     """Function if User Input is a Valid Input.
     Inputs:
         decision - User Input"""
@@ -223,6 +223,7 @@ def valid_input(decision):
         return False
 
 def main():
+    """Main function handling the code"""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
