@@ -7,6 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
+
     """Asks user to specify a city, month, and day to analyze.
     Returns:
         city - name of the city to analyze
@@ -49,6 +50,7 @@ def get_filters():
     return city, month, day
 
 def load_data(city, month, day):
+
     """Loads Data into Dataframe according to Filter
     Inputs:
         city - Which city we want to filter the Dataframe
@@ -80,6 +82,7 @@ def load_data(city, month, day):
     return df
 
 def time_stats(df):
+
     """Displays time statistics about Bikeshare Files
     Inputs:
         - df - Dataframe
@@ -113,6 +116,7 @@ def station_stats(df):
     print('The most popular trip is {}.'.format(popular_trip))
 
 def trip_duration_stats(df):
+
     """Displays statistics on the total and average trip duration.
     Inputs:
         - df - DataFrame"""
@@ -129,6 +133,7 @@ def trip_duration_stats(df):
     print('The average trip duration is {} minutes and {} seconds.'.format(minute_mean, second_mean))
 
 def user_stats(df):
+
     """Displays statistics on bikeshare users.
     Inputs:
         df - DataFrame"""
@@ -140,6 +145,7 @@ def user_stats(df):
     print('Count of User Types: Subsriber: {}, Customer {}.'.format(subscriber, customer))
 
 def user_stats_city_spec(df):
+
     """User statistics which can be shown only for certain cities.
     Inputs:
         df - DataFrame"""
@@ -156,6 +162,7 @@ def user_stats_city_spec(df):
     print('Birth Year of oldest User: {}'.format(min_year))
 
 def most_popular_month(df):
+
     """Statistics about the most popular month.
     Inputs:
         df - DataFrame"""
@@ -163,6 +170,7 @@ def most_popular_month(df):
     print('Most popular Month: {}'.format(most_popular_month))
 
 def most_popular_day(df):
+
     """Statistics about the most popular day.
     Inputs:
         df - DataFrame"""
@@ -170,6 +178,7 @@ def most_popular_day(df):
     print('Most popular Day: {}'.format(most_popular_day))
 
 def show_data(df):
+
     """Funktion to show raw data if requested.
     Inputs:
         df - DataFrame"""
@@ -204,6 +213,7 @@ def show_data(df):
                 break
 
 def valid_input(decision):
+    
     """Function if User Input is a Valid Input.
     Inputs:
         decision - User Input"""
